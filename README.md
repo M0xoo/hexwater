@@ -6,28 +6,34 @@ Terminal honeycomb water-footprint analyzer for local AI coding subscriptions (*
 
 ## Quick Run (zero install)
 
-`hexwater` is a valid **Bash + Python 3 polyglot**, so you can pipe it straight to `bash`:
+`hexwater` is a valid **Bash + Python 3 polyglot**, so you can pipe it straight to `bash` (using the release asset URL so GitHub counts every run):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/M0xoo/hexwater/main/hexwater | bash
+curl -fsSL https://github.com/M0xoo/hexwater/releases/latest/download/hexwater | bash
 ```
 
 Pass CLI flags via `bash -s --`:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/M0xoo/hexwater/main/hexwater | bash -s -- --json
+curl -fsSL https://github.com/M0xoo/hexwater/releases/latest/download/hexwater | bash -s -- --json
 ```
 
 ## Install to `~/.local/bin/hexwater`
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/M0xoo/hexwater/main/install.sh | bash
+curl -fsSL https://github.com/M0xoo/hexwater/releases/latest/download/install.sh | bash
 ```
 
 Then run anytime from your terminal:
 
 ```bash
 hexwater
+```
+
+Check how many times Method 1 (`curl | bash`) vs Method 2 (`install.sh`) has been used:
+
+```bash
+hexwater --stats
 ```
 
 ## Supported Local Telemetry Stores
